@@ -12,7 +12,7 @@ const CreatePostForm = (props) => {
             status: status
         };
         console.log(newPost)
-        props.CreatePostForm(newPost)
+        props.addNewEntry(newPost)
     
     }
     return ( 
