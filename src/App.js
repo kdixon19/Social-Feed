@@ -1,23 +1,13 @@
-import logo from './logo.svg';
 import './App.css';
+import PostList from './Components/PostList/PostList';
 
 function App() {
+
+   let sampleData = [{name: 'Jordan', status: 'Im the coldest to ever do it'}, {name: 'Kristoff', status: 'Aija my one and only'}]
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <PostList sampleData = {sampleData} />
     </div>
   );
 }
