@@ -6,7 +6,7 @@ import React, { useState } from 'react';
 
 function App() {
 
-   const [entries, setEntries] =  useState([{name: 'Jordan', status: 'Im the coldest to ever do it'}, {name: 'Kristoff', status: 'Aija my one and only'}])
+   const [entries, setEntries] =  useState([{name: 'Jordan', status: 'Im the luckiest person in the world to have Kristoff as a roommate'}, {name: 'Kristoff', status: 'I sure do love my girlfriend'}])
 
    function addNewEntry(entry){
     

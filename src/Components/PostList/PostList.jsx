@@ -1,5 +1,6 @@
 import Post from "../PostForm/Post";
-import LikeAndDislike from "../LikeandDislike/LikeandDislike";
+import LikeButton from "../LikeButton/LikeButton";
+import DislikeButton from "../DislikeButton/DislikeButton";
 
 const PostList = (props) => {
     return ( 
@@ -9,7 +10,8 @@ const PostList = (props) => {
                     return (
                         <tr>
                             <Post name = {data.name} status = {data.status} />
-                            <LikeAndDislike />
+                            <LikeButton />
+                            <DislikeButton />
                         </tr>
                     )
                 })}
