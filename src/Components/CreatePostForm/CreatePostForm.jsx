@@ -11,8 +11,10 @@ const CreatePostForm = (props) => {
             name: name,
             status: status
         };
+        console.log(newPost)
         props.CreatePostForm(newPost)
-
+    
+    }
     return ( 
         <div>
             <form onSubmit={handleSubmit}>
@@ -24,9 +26,10 @@ const CreatePostForm = (props) => {
                     <label>Status: </label>
                     <input type = 'text' value = {status} onChange = {(event) => setStatus(event.target.value)}/>
                 </div>
+                <button type = 'submit'>Submit</button>
             </form>
         </div>
      );
-}}
+}
  
 export default CreatePostForm;
